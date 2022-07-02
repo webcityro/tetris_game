@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="css/style.css" />
+
+		<script src="js/app.js" type="module" defer></script>
+		<title>The coolest tetris game ever!</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="side left">
+				<div class="card">
+					<div class="card-title">Hold</div>
+					<div class="card-body grid-wrapper hold-wrapper">
+						<div class="grid hold"></div>
+					</div>
+				</div>
+				<div class="card card-score">
+					<div class="card-title">Score</div>
+					<div class="card-body score">0</div>
+					<div class="card-title">Level</div>
+					<div class="card-body level">0</div>
+					<div class="card-title">Lines</div>
+					<div class="card-body lines">0</div>
+				</div>
+			</div>
+			<div class="card grid game-frame"></div>
+			<div class="side right">
+				<div class="card">
+					<div class="card-title">Next</div>
+					<div class="card-body grid-wrapper queue"></div>
+				</div>
+				<div class="card pause">
+					<button class="pause-btn">
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							x="0px"
+							y="0px"
+							viewBox="0 0 277.338 277.338"
+							xml:space="preserve"
+						>
+							<g>
+								<path
+									d="M14.22,45.665v186.013c0,25.223,16.711,45.66,37.327,45.66c20.618,0,37.339-20.438,37.339-45.66V45.665
+							c0-25.211-16.721-45.657-37.339-45.657C30.931,0,14.22,20.454,14.22,45.665z"
+								/>
+								<path
+									d="M225.78,0c-20.614,0-37.325,20.446-37.325,45.657V231.67c0,25.223,16.711,45.652,37.325,45.652s37.338-20.43,37.338-45.652
+							V45.665C263.109,20.454,246.394,0,225.78,0z"
+								/>
+							</g>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<footer>&copy; Copyright 2022 Web City</footer>
+
+		<div class="modal start-modal hide">
+			<div class="card">
+				<div class="card-body">
+					<h1 class="card-title">Welcome to tetris</h1>
+					<button class="btn start-btn">Start</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal paused-modal hide">
+			<div class="card">
+				<div class="card-body">
+					<h1 class="card-title">Paused</h1>
+					<button class="btn resume-btn">Resume</button>
+					<br />
+					<button class="btn restart-btn">New Game</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal game-over-modal hide">
+			<div class="card">
+				<div class="card-body">
+					<h1 class="card-title">Game over</h1>
+					<button class="btn restart-btn">New Game</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
